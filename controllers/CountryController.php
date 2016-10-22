@@ -116,11 +116,6 @@ class CountryController extends Controller
     protected function findModel($id)
     {
         if (($model = Country::findOne($id)) !== null) {
-$commandQuery = clone $model;  
-echo $commandQuery->createCommand()->getRawSql();  
-exit;
-
-        	
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

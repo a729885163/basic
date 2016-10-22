@@ -13,6 +13,9 @@ class IndexController extends Controller
 {
     public function actionIndex()
     {
+        $headers = Yii::$app->request->headers;
+        $accept = $headers->get('contentType');
+        print($accept);
         $this->layout = false;
         return $this->render('index');
     }
