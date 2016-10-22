@@ -102,3 +102,4 @@ return [
 - Refer to the README in the `tests` directory for information specific to basic application tests.
 # yiibasic
 # yiibaisc
+# basic
