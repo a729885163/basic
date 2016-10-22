@@ -8,15 +8,13 @@ namespace app\controllers;
 
 use Yii;
 use yii\web\Controller;
+use yii\web\NotFoundHttpException;
 
 class IndexController extends Controller
 {
+    public $layout = 'layout1';
     public function actionIndex()
     {
-        $headers = Yii::$app->request->headers;
-        $accept = $headers->get('contentType');
-        print($accept);
-        $this->layout = false;
         return $this->render('index');
     }
 
