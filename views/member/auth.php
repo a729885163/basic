@@ -1,3 +1,9 @@
+<?php 
+use yii\helpers\Html;
+use bootstrap\ActiveForm;
+
+$this->title = 'login';
+?>
 <!-- ========================================= MAIN ========================================= -->
 <main id="authentication" class="inner-bottom-md">
 	<div class="container">
