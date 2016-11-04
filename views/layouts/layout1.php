@@ -726,7 +726,7 @@
     </script>
     <!-- For demo purposes – can be removed on production : End -->
 
-    <script src="http://w.sharethis.com/button/buttons.js"></script>
+    <script src="<?php echo JS_URL; ?>sharethis.js"></script>
 
 </body>
 </html>

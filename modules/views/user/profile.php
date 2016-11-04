@@ -1,4 +1,8 @@
-
+<?php
+use yii\helpers\Html;
+?>
+    <!-- this page specific styles -->
+<?=Html::cssFile('assets/admin/css/compiled/user-profile.css')?>
 	<!-- main container -->
     <div class="content">
         

@@ -5,7 +5,6 @@ namespace app\controllers;
 use Yii;
 use yii\web\controller;
 use app\models\Hello;
-
 class HelloController extends Controller
 {
 
@@ -22,6 +21,10 @@ class HelloController extends Controller
 
     public function actionHelloWorld()
     {
+        $session = Yii::$app->session;
+
+        $session->set('language', 'en-US');
+
         $model = new Hello;
         $one = $model->find()->one();
         //return "hello world";
@@ -29,6 +32,7 @@ class HelloController extends Controller
         return $this->render('hello-world', [
                 'foo' => 'foo',
                 'bar' => $one,
+                'session' => $session['language'],
                 ]
             );
     }

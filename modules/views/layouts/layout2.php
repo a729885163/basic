@@ -18,8 +18,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_CSS_URL ?>elements.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo ADMIN_CSS_URL ?>icons.css" />
     
-    <!-- this page specific styles -->
-    <link rel="stylesheet" href="<?php echo ADMIN_CSS_URL ?>compiled/user-profile.css" type="text/css" media="screen" />
+
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
